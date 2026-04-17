@@ -1,14 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+<<<<<<< HEAD
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\HocPhanController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\LopHocController;
+=======
+>>>>>>> 425f607 (init project student manager)
 
 Route::get('/', function () {
     return view('welcome');
 });
+<<<<<<< HEAD
 
 Route::resource('hocphan', HocPhanController::class);
 
@@ -27,3 +31,5 @@ Route::middleware('auth')->group(function () {
 
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 });
+=======
+>>>>>>> 425f607 (init project student manager)
